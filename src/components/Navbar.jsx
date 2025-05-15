@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../assets/images/ei_1644409695507-removebg-preview.png'; // adjust path as necessary
+import logo from '../assets/images/ei_1644409695507-removebg-preview.png';
 
 const Navbar = () => {
   return (

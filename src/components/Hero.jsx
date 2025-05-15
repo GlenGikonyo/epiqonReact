@@ -1,7 +1,9 @@
 import React from 'react'
+import manEditing from '../assets/images/man-editing.webp';
 
 const Hero = () => {
   return (
+
     <div className="hero">
       <div className="container">
         <div className="row align-items-center">
@@ -47,7 +49,7 @@ const Hero = () => {
             <div className="hero-video-image">
               <div className="hero-image">
                 <figure className="image-anime reveal">
-                  <img src="/images/man-editing.webp" alt="" />
+                  <img src={manEditing} alt="edit" />
                 </figure>
               </div>
 
@@ -65,6 +67,7 @@ const Hero = () => {
         </div>
       </div>
     </div>
+    
   );
 }
 
