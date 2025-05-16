@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import logo from '../assets/images/ei_1644409695507-removebg-preview.png';
 
 const Navbar = () => {
@@ -8,38 +9,38 @@ const Navbar = () => {
         <nav className="navbar navbar-expand-lg">
           <div className="container">
             {/* Logo Start */}
-            <a className="navbar-brand" href="index.html">
+            <Link className="navbar-brand" to="/">
               <img src={logo} alt="Logo" />
-            </a>
+            </Link>
             {/* Logo End */}
             {/* Main Menu Start */}
             <div className="collapse navbar-collapse main-menu">
               <div className="nav-menu-wrapper">
                 <ul className="navbar-nav mr-auto" id="menu">
-                  <li><a className="nav-link" href="index.html">home</a></li>
-                  <li className="nav-item"><a className="nav-link" href="about.html">about us</a></li>
-                  <li className="nav-item"><a className="nav-link" href="services.html">services</a></li>
-                  <li className="nav-item"><a className="nav-link" href="portfolio.html">portfolio</a></li>
-                  <li className="nav-item"><a className="nav-link" href="blog.html">blog</a></li>
+                  <li><Link className="nav-link" to="/">home</Link></li>
+                  <li className="nav-item"><Link className="nav-link" to="/about">about us</Link></li>
+                  <li className="nav-item"><Link className="nav-link" to="/services">services</Link></li>
+                  <li className="nav-item"><Link className="nav-link" to="/portfolio">portfolio</Link></li>
+                  <li className="nav-item"><Link className="nav-link" to="/blog">blog</Link></li>
                   <li className="nav-item submenu">
-                    <a className="nav-link" href="#">pages</a>
+                    <Link className="nav-link" to="#">pages</Link>
                     <ul>
-                      <li className="nav-item"><a className="nav-link" href="service-single.html">service details</a></li>
-                      <li className="nav-item"><a className="nav-link" href="portfolio-single.html">portfolio details</a></li>
-                      <li className="nav-item"><a className="nav-link" href="blog-single.html">blog details</a></li>
-                      <li className="nav-item"><a className="nav-link" href="faqs.html">FAQ</a></li>
-                      <li className="nav-item"><a className="nav-link" href="404.html">404</a></li>
+                      <li className="nav-item"><Link className="nav-link" to="/service-single">service details</Link></li>
+                      <li className="nav-item"><Link className="nav-link" to="/portfolio-single">portfolio details</Link></li>
+                      <li className="nav-item"><Link className="nav-link" to="/blog-single">blog details</Link></li>
+                      <li className="nav-item"><Link className="nav-link" to="/faqs">FAQ</Link></li>
+                      <li className="nav-item"><Link className="nav-link" to="/404">404</Link></li>
                     </ul>
                   </li>
                   <li className="nav-item highlighted-menu">
-                    <a className="nav-link" href="contact-us.html">free consultation</a>
+                    <Link className="nav-link" to="/contact-us">free consultation</Link>
                   </li>
                 </ul>
               </div>
 
               {/* Let’s Start Button Start */}
               <div className="header-btn d-inline-flex">
-                <a href="contact-us.html" className="btn-default">free consultation</a>
+                <Link to="/contact-us" className="btn-default">free consultation</Link>
               </div>
               {/* Let’s Start Button End */}
             </div>
