@@ -3,7 +3,6 @@ import manEditing from '../assets/images/man-editing.webp';
 
 const Hero = () => {
   return (
-
     <div className="hero">
       <div className="container">
         <div className="row align-items-center">

@@ -21,17 +21,6 @@ const Navbar = () => {
                   <li className="nav-item"><Link className="nav-link" to="/about">about us</Link></li>
                   <li className="nav-item"><Link className="nav-link" to="/services">services</Link></li>
                   <li className="nav-item"><Link className="nav-link" to="/portfolio">portfolio</Link></li>
-                  <li className="nav-item"><Link className="nav-link" to="/blog">blog</Link></li>
-                  <li className="nav-item submenu">
-                    <Link className="nav-link" to="#">pages</Link>
-                    <ul>
-                      <li className="nav-item"><Link className="nav-link" to="/service-single">service details</Link></li>
-                      <li className="nav-item"><Link className="nav-link" to="/portfolio-single">portfolio details</Link></li>
-                      <li className="nav-item"><Link className="nav-link" to="/blog-single">blog details</Link></li>
-                      <li className="nav-item"><Link className="nav-link" to="/faqs">FAQ</Link></li>
-                      <li className="nav-item"><Link className="nav-link" to="/404">404</Link></li>
-                    </ul>
-                  </li>
                   <li className="nav-item highlighted-menu">
                     <Link className="nav-link" to="/contact-us">free consultation</Link>
                   </li>

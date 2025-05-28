@@ -1,11 +1,13 @@
-import React from 'react';
-import arrowIcon from '../assets/images/arrow.svg';
-import serviceImg1 from '../assets/images/service-img-1.jpg';
-import serviceImg2 from '../assets/images/service-img-2.jpg';
-import serviceImg3 from '../assets/images/service-img-3.jpg';
-import serviceImg4 from '../assets/images/service-img-4.jpg';
-import serviceImg5 from '../assets/images/service-img-5.jpg';
-import serviceImg6 from '../assets/images/service-img-6.jpg';
+import React from "react";
+import { Link } from 'react-router-dom';
+import arrowIcon from "../assets/images/arrow.svg";
+import serviceImg1 from "../assets/images/service-img-1.jpg";
+import serviceImg2 from "../assets/images/service-img-2.jpg";
+// import serviceImg3 from '../assets/images/service-img-3.jpg';
+import serviceImg4 from "../assets/images/service-img-4.jpg";
+// import serviceImg5 from '../assets/images/service-img-5.jpg';
+import serviceImg6 from "../assets/images/service-img-6.jpg";
+
 
 const OurServices = () => {
   return (
@@ -24,7 +26,11 @@ const OurServices = () => {
           <div className="col-lg-5 col-md-5">
             {/* Section Btn Start */}
             <div className="section-btn">
-              <a href="#" className="btn-default wow fadeInUp" data-wow-delay="0.25s">
+              <a
+                href="#"
+                className="btn-default wow fadeInUp"
+                data-wow-delay="0.25s"
+              >
                 view all services
               </a>
             </div>
@@ -34,25 +40,49 @@ const OurServices = () => {
 
         <div className="row">
           {[
-            { title: "web development", image: serviceImg1, delay: "0.25s" },
-            { title: "Digital Marketing", image: serviceImg2, delay: "0.5s" },
-            { title: "Game Development", image: serviceImg3, delay: "0.75s" },
-            { title: "Mobile App Development", image: serviceImg4, delay: "1s" },
-            { title: "Networking Services", image: serviceImg5, delay: "1.25s" },
-            { title: "Graphics Design", image: serviceImg6, delay: "1.5s" },
+            {
+              id: 1,
+              title: "web development",
+              image: serviceImg1,
+              delay: "0.25s",
+            },
+            {
+              id: 2,
+              title: "Digital Marketing",
+              image: serviceImg2,
+              delay: "0.5s",
+            },
+            // { title: "Game Development", image: serviceImg3, delay: "0.75s" },
+            {
+              id: 3,
+              title: "Mobile App Development",
+              image: serviceImg4,
+              delay: "1s",
+            },
+            // { title: "Networking Services", image: serviceImg5, delay: "1.25s" },
+            {
+              id: 4,
+              title: "Graphics Design",
+              image: serviceImg6,
+              delay: "1.5s",
+            },
           ].map((service, index) => (
             <div className="col-lg-4 col-md-6" key={index}>
               {/* Service Item Start */}
-              <div className={`service-item wow fadeInUp`} data-wow-delay={service.delay}>
+              <div
+                className={`service-item wow fadeInUp`}
+                data-wow-delay={service.delay}
+              >
                 <div className="service-content">
                   <div className="service-content-title">
                     <h2>{service.title}</h2>
-                    <a href="#">
+                    <Link to={`/services/${service.id}`}>
                       <img src={arrowIcon} alt="arrow" />
-                    </a>
+                    </Link>
                   </div>
                   <p>
-                    totam rem aperiam, eaque ipsa quae ab illo inventore et quasi architecto beatae.
+                    totam rem aperiam, eaque ipsa quae ab illo inventore et
+                    quasi architecto beatae.
                   </p>
                 </div>
                 <div className="service-image">
