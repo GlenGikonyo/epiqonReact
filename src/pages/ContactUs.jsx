@@ -1,0 +1,217 @@
+import React from "react";
+import Navbar from "../components/Navbar";
+import PageHeader from "../components/PageHeader";
+import Footer from "../components/Footer";
+import contactData from "../data/contactData";
+
+const ContactUs = () => {
+  return (
+    <>
+      <Navbar />
+      <PageHeader title={"Contact Us"} />
+      {/* Contact Us Section Start */}
+      <div className="contact-information">
+        <div className="container">
+          <div className="row">
+            {contactData.map((item, index) => (
+              <div className="col-md-4" key={index}>
+                <div
+                  className="contact-item wow fadeInUp"
+                  data-wow-delay={item.delay}
+                >
+                  <div className="contact-content">
+                    <div className="contact-content-title">
+                      <h2>{item.title}</h2>
+                      <a href="#">
+                        <img src={item.icon} alt="" />
+                      </a>
+                    </div>
+                    {item.content.map((line, i) => (
+                      <p key={i}>{line}</p>
+                    ))}
+                  </div>
+                  <div className="contact-image">
+                    <figure className="image-anime">
+                      <img src={item.image} alt="" />
+                    </figure>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+      {/* Contact Us Section End */}
+      <div className="contact-us">
+        <div className="container">
+          <div className="row align-items-center">
+            {/* Contact Details Section */}
+            <div className="col-lg-6">
+              <div className="contact-details">
+                <div className="section-title">
+                  <h3 className="wow fadeInUp">contact us</h3>
+                  <h2 className="text-anime-style-3">
+                    Get in touch with us today
+                  </h2>
+                </div>
+
+                <div className="contact-detail-body">
+                  <p className="wow fadeInUp" data-wow-delay="0.25s">
+                    Sed ut perspiciatis unde omnis iste natus error sit
+                    voluptatem accusantium, totam rem aperiam, eaque ipsa quae
+                    ab illo inventore et.
+                  </p>
+                  <h3 className="wow fadeInUp" data-wow-delay="0.5s">
+                    follow us:
+                  </h3>
+                  <ul className="wow fadeInUp" data-wow-delay="0.75s">
+                    <li>
+                      <a href="#">
+                        <i className="fa-brands fa-facebook-f"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i className="fa-brands fa-instagram"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i className="fa-brands fa-linkedin-in"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i className="fa-brands fa-twitter"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            {/* Contact Form Section */}
+            <div className="col-lg-6">
+              <div
+                className="contact-form-box wow fadeInUp"
+                data-wow-delay="0.5s"
+              >
+                <div className="contact-form">
+                  <form id="contactForm" action="#" method="POST">
+                    <div className="row">
+                      <div className="form-group col-md-6 mb-4">
+                        <input
+                          type="text"
+                          name="fname"
+                          className="form-control"
+                          id="fname"
+                          placeholder="first name"
+                          required
+                        />
+                        <div className="help-block with-errors"></div>
+                      </div>
+
+                      <div className="form-group col-md-6 mb-4">
+                        <input
+                          type="text"
+                          name="lname"
+                          className="form-control"
+                          id="lname"
+                          placeholder="last name"
+                          required
+                        />
+                        <div className="help-block with-errors"></div>
+                      </div>
+
+                      <div className="form-group col-md-6 mb-4">
+                        <input
+                          type="text"
+                          name="phone"
+                          className="form-control"
+                          id="phone"
+                          placeholder="Phone"
+                          required
+                        />
+                        <div className="help-block with-errors"></div>
+                      </div>
+
+                      <div className="form-group col-md-6 mb-4">
+                        <input
+                          type="email"
+                          name="email"
+                          className="form-control"
+                          id="email"
+                          placeholder="email"
+                          required
+                        />
+                        <div className="help-block with-errors"></div>
+                      </div>
+
+                      <div className="form-group col-md-12 mb-4">
+                        <input
+                          type="text"
+                          name="subject"
+                          className="form-control"
+                          id="subject"
+                          placeholder="subjects"
+                          required
+                        />
+                        <div className="help-block with-errors"></div>
+                      </div>
+
+                      <div className="form-group col-md-12 mb-4">
+                        <textarea
+                          name="msg"
+                          className="form-control"
+                          id="msg"
+                          rows="7"
+                          placeholder="message"
+                          required
+                        ></textarea>
+                        <div className="help-block with-errors"></div>
+                      </div>
+
+                      <div className="col-md-12">
+                        <button type="submit" className="btn-default">
+                          send a message
+                        </button>
+                        <div
+                          id="msgSubmit"
+                          className="h3 text-left hidden"
+                        ></div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* End Contact Form Section */}
+      <div className="google-map wow fadeInUp" data-wow-delay="0.25s">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-12">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8214493530854!2d36.82096767460077!3d-1.280824398706992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10d51576439d%3A0x6159faa41c0b2eb8!2sHemak%20Plaza!5e0!3m2!1sen!2ske!4v1748531218194!5m2!1sen!2ske"
+                width="600"
+                height="450"
+                style={{ border: 0 }}
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Google Map"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <Footer />
+    </>
+  );
+};
+
+export default ContactUs;
+
+// This code defines a ContactUs component that renders a Navbar, a PageHeader with the title "Contact Us", and a Footer.

@@ -22,14 +22,14 @@ const Navbar = () => {
                   <li className="nav-item"><Link className="nav-link" to="/services">services</Link></li>
                   <li className="nav-item"><Link className="nav-link" to="/portfolio">portfolio</Link></li>
                   <li className="nav-item highlighted-menu">
-                    <Link className="nav-link" to="/contact-us">free consultation</Link>
+                    <Link className="nav-link" to="/contact-us">Contact Us</Link>
                   </li>
                 </ul>
               </div>
 
               {/* Let’s Start Button Start */}
               <div className="header-btn d-inline-flex">
-                <Link to="/contact-us" className="btn-default">free consultation</Link>
+                <Link to="/contact-us" className="btn-default">Contact Us</Link>
               </div>
               {/* Let’s Start Button End */}
             </div>

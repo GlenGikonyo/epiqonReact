@@ -3,7 +3,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Services from "./pages/Services";
 import ServiceDetail from "./pages/ServiceDetails";
-// import Contact from './pages/Contact';
+import Contact from './pages/ContactUs';
 import Portfolio from "./pages/Portfolio";
 
 function App() {
@@ -15,6 +15,7 @@ function App() {
         <Route path="/services" element={<Services />} />
         <Route path="/services/:id" element={<ServiceDetail />} />
         <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/contact-us" element={<Contact />} />
       </Routes>
     </Router>
   );

@@ -1,0 +1,27 @@
+const contactData = [
+    {
+      title: "address",
+      icon: "/assets/images/icon-location.svg",
+      content: ["123, Lorem Ipsum, Street no, City, Country 123456"],
+      image: "/assets/images/contact-info-1.jpg",
+      delay: "0.25s",
+    },
+    {
+      title: "call now",
+      icon: "/assets/images/icon-phone.svg",
+      content: ["(+0) 123 456 789", "(+0) 123 456 789"],
+      image: "/assets/images/contact-info-2.jpg",
+      delay: "0.5s",
+    },
+    {
+      title: "email us",
+      icon: "/assets/images/icon-mail.svg",
+      content: ["info@domainname.com", "info@domainname.com"],
+      image: "/assets/images/contact-info-3.jpg",
+      delay: "0.75s",
+    },
+  ];
+
+  export default contactData;
+// This code defines an array of contact information objects, each containing a title, icon, content (which is an array of strings), an image path, and a delay for animations. This data can be used to populate a contact page with various contact methods such as address, phone number, and email. Each object can be rendered in a component to display the contact information dynamically.
+// The contactData array can be imported and used in a React component to display contact information dynamically, such as in a Contact Us page. Each object in the array represents a different method of contact, including address, phone number, and email, along with associated icons and images for visual representation.
