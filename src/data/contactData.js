@@ -1,23 +1,23 @@
 const contactData = [
     {
       title: "address",
-      icon: "/assets/images/icon-location.svg",
+      icon: "/src/assets/images/icon-location.svg",
       content: ["123, Lorem Ipsum, Street no, City, Country 123456"],
-      image: "/assets/images/contact-info-1.jpg",
+      image: "/src/assets/images/contact-info-1.jpg",
       delay: "0.25s",
     },
     {
       title: "call now",
-      icon: "/assets/images/icon-phone.svg",
+      icon: "/src/assets/images/icon-phone.svg",
       content: ["(+0) 123 456 789", "(+0) 123 456 789"],
-      image: "/assets/images/contact-info-2.jpg",
+      image: "/src/assets/images/contact-info-2.jpg",
       delay: "0.5s",
     },
     {
       title: "email us",
-      icon: "/assets/images/icon-mail.svg",
+      icon: "src/assets/images/icon-mail.svg",
       content: ["info@domainname.com", "info@domainname.com"],
-      image: "/assets/images/contact-info-3.jpg",
+      image: "/src/assets/images/contact-info-3.jpg",
       delay: "0.75s",
     },
   ];

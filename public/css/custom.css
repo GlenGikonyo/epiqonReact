@@ -594,7 +594,7 @@ header.main-header .header-sticky.active{
 
 .hero{
 	position: relative;
-	background: var(--secondary-color) url(../images/hero-bg.png) no-repeat bottom center;
+	background: var(--secondary-color) url(../hero-bg.png) no-repeat bottom center;
 	padding: 50px 0;
 }
 

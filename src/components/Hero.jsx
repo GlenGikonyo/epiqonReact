@@ -47,19 +47,19 @@ const Hero = () => {
             {/* Hero Video Image Start */}
             <div className="hero-video-image">
               <div className="hero-image">
-                <figure className="image-anime reveal">
+                <figure className="image-anime">
                   <img src={manEditing} alt="edit" />
                 </figure>
               </div>
 
-              <div className="hero-play-button">
+              {/* <div className="hero-play-button">
                 <a
                   href="https://www.youtube.com/watch?v=Y-x0efG1seA"
                   className="popup-video"
                 >
                   <i className="fa-solid fa-play"></i>
                 </a>
-              </div>
+              </div> */}
             </div>
             {/* Hero Video Image End */}
           </div>

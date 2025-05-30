@@ -21,7 +21,7 @@ const AboutUs = () => {
             {/* About Us Image Start */}
             <div className="about-image">
               <div className="about-img">
-                <figure className="image-anime reveal">
+                <figure className="image-anime">
                   <img src={aboutImage} alt="About Us" />
                 </figure>
               </div>
