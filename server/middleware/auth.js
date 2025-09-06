@@ -1,14 +1,14 @@
-const jwt = require('jsonwebtoken');
-
+// middleware/basicAuth.js
 module.exports = function (req, res, next) {
-  const token = req.header('Authorization')?.replace('Bearer ', '');
-  if (!token) return res.status(401).json({ msg: 'No token, authorization denied' });
+  const authHeader = req.headers["authorization"] || "";
+  const [type, credentials] = authHeader.split(" ");
 
-  try {
-    const decoded = jwt.verify(token, process.env.JWT_SECRET);
-    req.user = decoded.user;
-    next();
-  } catch (err) {
-    res.status(401).json({ msg: 'Token is not valid' });
+  if (type !== "Basic") return res.status(401).send("Unauthorized");
+
+  const [user, pass] = Buffer.from(credentials, "base64").toString().split(":");
+
+  if (user === process.env.ADMIN_USER && pass === process.env.ADMIN_PASS) {
+    return next();
   }
+  res.status(401).send("Unauthorized");
 };

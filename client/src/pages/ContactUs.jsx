@@ -34,7 +34,7 @@ const ContactUs = () => {
 
     try {
       const res = await axios.post(
-        "http://localhost:5000/api/messages",
+        "http://localhost:3000/api/messages",
         messageData
       );
       setSuccessMessage("Message sent successfully!");
@@ -222,8 +222,8 @@ const ContactUs = () => {
                         <button type="submit" className="btn-default">
                           Send a Message
                         </button>
-                        {statusMessage && (
-                          <p className="mt-3 text-success">{statusMessage}</p>
+                        {successMessage && (
+                          <p className="mt-3 text-success">{successMessage}</p>
                         )}
                       </div>
                     </div>

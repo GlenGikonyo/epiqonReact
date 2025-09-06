@@ -6,8 +6,19 @@ import ServiceDetail from "./pages/ServiceDetails";
 import Contact from "./pages/ContactUs";
 import Portfolio from "./pages/Portfolio";
 import PreloaderAndCursor from "./components/PreLoaderAndCursor";
+import Admin from "./pages/Admin";
+import Login from "./components/Login";
+import { useState, useCallback } from "react";
 
 function App() {
+  const [isLoggedIn, setIsLoggedIn] = useState(
+    !!localStorage.getItem("username") && !!localStorage.getItem("password")
+  );
+
+  // 🔒 Stable functions using useCallback
+  const handleLogin = useCallback(() => setIsLoggedIn(true), []);
+  const handleLogout = useCallback(() => setIsLoggedIn(false), []);
+
   return (
     <>
       <PreloaderAndCursor />
@@ -19,6 +30,17 @@ function App() {
           <Route path="/services/:id" element={<ServiceDetail />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/contact-us" element={<Contact />} />
+          <Route path="/login" element={<Login onLogin={handleLogin} />} />
+          <Route
+            path="/admin"
+            element={
+              isLoggedIn ? (
+                <Admin onLogout={handleLogout} />
+              ) : (
+                <Login onLogin={handleLogin} />
+              )
+            }
+          />
         </Routes>
       </Router>
     </>
