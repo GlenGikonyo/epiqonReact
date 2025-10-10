@@ -27,7 +27,7 @@ const OurServices = () => {
             {/* Section Btn Start */}
             <div className="section-btn">
               <a
-                href="#"
+                href="/services"
                 className="btn-default wow fadeInUp"
                 data-wow-delay="0.25s"
               >
@@ -42,29 +42,41 @@ const OurServices = () => {
           {[
             {
               id: 1,
-              title: "web development",
+              title: "Digital Marketing",
               image: serviceImg1,
               delay: "0.25s",
             },
             {
               id: 2,
-              title: "Digital Marketing",
+              title: "Photography and Videography",
               image: serviceImg2,
               delay: "0.5s",
             },
             // { title: "Game Development", image: serviceImg3, delay: "0.75s" },
             {
               id: 3,
-              title: "Mobile App Development",
+              title: "Website Development",
               image: serviceImg4,
               delay: "1s",
             },
             // { title: "Networking Services", image: serviceImg5, delay: "1.25s" },
             {
               id: 4,
-              title: "Graphics Design",
+              title: "Graphics Design And Branding",
               image: serviceImg6,
               delay: "1.5s",
+            },
+            {
+              id: 5,
+              title: "Brand Management",
+              image: serviceImg1,
+              delay: "1.75s",
+            },
+            {
+              id: 6,
+              title: "Sound Equipment / PA System Hire",
+              image: serviceImg2,
+              delay: "2s",
             },
           ].map((service, index) => (
             <div className="col-lg-4 col-md-6" key={index}>

@@ -1,17 +1,17 @@
-import React from 'react'
-import manEditing from '../assets/images/man-editing.webp';
+import React from "react";
+import manEditing from "../assets/images/black-guy-editing.jpg"; 
 
 const Hero = () => {
   return (
     <div className="hero">
       <div className="container">
         <div className="row align-items-center">
-          <div className="col-lg-8">
+          <div className="col-lg-6">
             {/* Hero Content Start */}
             <div className="hero-content">
               {/* Section Title Start */}
               <div className="section-title">
-                <h3 className="wow fadeInUp">about our Company</h3>
+                <h3 className="wow fadeInUp">Epiqon Solutions</h3>
                 <h1 className="text-anime-style-3">
                   Digital Media & IT <span>Service Provider</span>
                 </h1>
@@ -21,9 +21,9 @@ const Hero = () => {
               {/* Hero Body Start */}
               <div className="hero-body">
                 <p className="wow fadeInUp" data-wow-delay="0.5s">
-                  Welcome to Epiqon Solutions Ltd, where innovation meets
-                  excellence in media and IT services. We specialize in
-                  providing comprehensive solutions tailored to meet your needs.
+                  Epiqon Solutions Ltd is a creative and technology-driven
+                  company dedicated to helping brands, businesses, and
+                  organizations stand out in the digital age.
                 </p>
               </div>
               {/* Hero Body End */}
@@ -43,7 +43,7 @@ const Hero = () => {
             {/* Hero Left Content End */}
           </div>
 
-          <div className="col-lg-4">
+          <div className="col-lg-6">
             {/* Hero Video Image Start */}
             <div className="hero-video-image">
               <div className="hero-image">
@@ -66,8 +66,7 @@ const Hero = () => {
         </div>
       </div>
     </div>
-    
   );
-}
+};
 
 export default Hero;

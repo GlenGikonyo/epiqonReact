@@ -5,6 +5,31 @@ import icon3 from '../assets/images/icon-whyus-3.svg';
 import icon4 from '../assets/images/icon-whyus-4.svg';
 
 const WhyChooseUs = () => {
+  const CheckIcon = () => (
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+      <polyline points="20 6 9 17 4 12"></polyline>
+    </svg>
+  );
+
+  const reasons = [
+    {
+      icon: icon1,
+      text: 'One-stop hub for digital marketing, media, and IT solutions'
+    },
+    {
+      icon: icon2,
+      text: 'Experienced team with cross-industry expertise'
+    },
+    {
+      icon: icon3,
+      text: 'Tailored solutions for businesses of all sizes'
+    },
+    {
+      icon: icon4,
+      text: 'Commitment to creativity, professionalism, and results'
+    }
+  ];
+
   return (
     <div className="why-choose-us">
       <div className="container">
@@ -12,81 +37,36 @@ const WhyChooseUs = () => {
           <div className="col-lg-8 col-md-12">
             <div className="section-title">
               <h3 className="wow fadeInUp">why choose us</h3>
-              <h2 className="text-anime-style-3">Why choose us ?</h2>
+              <h2 className="text-anime-style-3">Why Choose Us?</h2>
             </div>
           </div>
         </div>
 
         <div className="row">
-          <div className="col-lg-4 col-md-6">
-            <div className="why-choose-us-item wow fadeInUp" data-wow-delay="0.25s">
-              <div className="icon-box">
-                <img src={icon1} alt="" />
-              </div>
-              <h3>innovation</h3>
-              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.</p>
-            </div>
-          </div>
-
-          <div className="col-lg-4 col-md-6">
-            <div className="why-choose-us-item wow fadeInUp" data-wow-delay="0.5s">
-              <div className="icon-box">
-                <img src={icon2} alt="" />
-              </div>
-              <h3>quality-focused</h3>
-              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.</p>
-            </div>
-          </div>
-
-          <div className="col-lg-4">
-            <div className="why-choose-us-item wow fadeInUp" data-wow-delay="0.75s">
-              <div className="icon-box">
-                <img src={icon3} alt="" />
-              </div>
-              <h3>value for money</h3>
-              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.</p>
-            </div>
-          </div>
-
-          <div className="col-md-12">
-            <div className="why-us-explore-item">
-              <div className="row">
-                <div className="col-md-12">
-                  <div className="why-us-section-title">
-                    <div className="section-title">
-                      <h2 className="text-anime-style-3">Do you want to explore our outstanding work?</h2>
-                    </div>
-
-                    <div className="explore-item-icon">
-                      <img src={icon4} alt="" />
-                    </div>
+          {reasons.map((reason, index) => (
+            <div key={index} className="col-lg-6 col-md-6">
+              <div className="why-choose-us-item wow fadeInUp" data-wow-delay={`${0.25 * (index + 1)}s`}>
+                <div style={{ display: 'flex', alignItems: 'flex-start', gap: '20px' }}>
+                  <div style={{
+                    minWidth: '40px',
+                    height: '40px',
+                    backgroundColor: 'var(--accent-color)',
+                    borderRadius: '50%',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    color: 'var(--white-color)',
+                    flexShrink: 0
+                  }}>
+                    <CheckIcon />
                   </div>
-                </div>
-              </div>
-
-              <div className="row align-items-center">
-                <div className="col-lg-6">
-                  <div className="explore-item-content wow fadeInUp" data-wow-delay="0.25s">
-                    <p>
-                      Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium, totam rem aperiam,
-                      eaque ipsa quae ab illo inventore et quasi architecto beatae vitae dicta sunt explicabo.
-                      Nemo enim ipsam voluptatem quia voluptas sit.
-                    </p>
-                  </div>
-                </div>
-
-                <div className="col-lg-6">
-                  <div className="explore-item-tags wow fadeInUp" data-wow-delay="0.25s">
-                    <ul>
-                      <li><a href="#" className="btn-default">dribbble</a></li>
-                      <li><a href="#" className="btn-default">linkedin</a></li>
-                      <li><a href="#" className="btn-default">contact Us</a></li>
-                    </ul>
-                  </div>
+                  <p style={{ margin: 0, fontSize: '18px', lineHeight: '1.6' }}>
+                    {reason.text}
+                  </p>
                 </div>
               </div>
             </div>
-          </div>
+          ))}
         </div>  
       </div>
     </div>

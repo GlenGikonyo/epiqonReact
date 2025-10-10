@@ -1,5 +1,5 @@
-import React from 'react';
-import aboutImage from '../assets/images/about-us-img.jpg'; // Update the path as needed
+import React from "react";
+import aboutImage from "../assets/images/about-more.jpg"; // Update the path as needed
 
 const AboutUs = () => {
   return (
@@ -9,8 +9,10 @@ const AboutUs = () => {
           <div className="col-lg-8">
             {/* Section Title Start */}
             <div className="section-title">
-              <h3 className="wow fadeInUp">about Company</h3>
-              <h2 className="text-anime-style-3">Websites that tell your brand&apos;s story</h2>
+              <h3 className="wow fadeInUp">about Our Company</h3>
+              <h2 className="text-anime-style-3">
+               About Epiqon Solutions
+              </h2>
             </div>
             {/* Section Title End */}
           </div>
@@ -33,34 +35,22 @@ const AboutUs = () => {
             {/* About Us Content Start */}
             <div className="about-content">
               <p className="wow fadeInUp" data-wow-delay="0.25s">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium,
-                totam rem aperiam, eaque ipsa quae ab illo inventore et quasi architecto
-                beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit.
+              Epiqon Solutions Ltd is a creative and technology-driven company
+              dedicated to helping brands, businesses, and organizations stand
+              out in the digital age.
               </p>
-
               <p className="wow fadeInUp" data-wow-delay="0.5s">
-                totam rem aperiam, eaque ipsa quae ab illo inventore et quasi architecto
-                beatae vitae dicta sunt explicabo. sed quia consequuntur magni dolores eos
-                qui ratione voluptatem sequi nesciunt.
+              As a sister company to Epiq Concepts
+              Ltd, we combine expertise in media production and IT solutions
+              to deliver impactful results that elevate brands, capture
+              audiences, and deliver measurable success.
               </p>
-
-              <p className="wow fadeInUp" data-wow-delay="0.75s">
-                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-                praesentium voluptatum deleniti cupiditate non provident, similique sunt in
-                culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
-              </p>
-
-              <ul className="wow fadeInUp" data-wow-delay="1s">
-                <li>Ease of Scalability</li>
-                <li>Instant Impact</li>
-                <li>Expertise and Experience</li>
-                <li>Time Zone Aligned</li>
-                <li>Full Flexibility</li>
-                <li>Proactive Support</li>
-              </ul>
-
-              <a href="#" className="btn-default wow fadeInUp" data-wow-delay="1.25s">
-                free consultation
+              <a
+                href="#"
+                className="btn-default wow fadeInUp"
+                data-wow-delay="1.25s"
+              >
+                More About Us
               </a>
             </div>
             {/* About Us Content End */}
