@@ -1,12 +1,12 @@
 import React from "react";
 import { Link } from 'react-router-dom';
 import arrowIcon from "../assets/images/arrow.svg";
-import serviceImg1 from "../assets/images/service-img-1.jpg";
-import serviceImg2 from "../assets/images/service-img-2.jpg";
-// import serviceImg3 from '../assets/images/service-img-3.jpg';
-import serviceImg4 from "../assets/images/service-img-4.jpg";
-// import serviceImg5 from '../assets/images/service-img-5.jpg';
-import serviceImg6 from "../assets/images/service-img-6.jpg";
+import serviceImg1 from "../assets/images/digital-marketing.jpg";
+import serviceImg2 from "../assets/images/photography.jpg";
+import serviceImg3 from '../assets/images/webdev.jpg';
+import serviceImg4 from "../assets/images/graphics-design.jpg";
+import serviceImg5 from '../assets/images/brand-management.jpg';
+import serviceImg6 from "../assets/images/music-controller.jpg";
 
 
 const OurServices = () => {
@@ -56,26 +56,26 @@ const OurServices = () => {
             {
               id: 3,
               title: "Website Development",
-              image: serviceImg4,
+              image: serviceImg3,
               delay: "1s",
             },
             // { title: "Networking Services", image: serviceImg5, delay: "1.25s" },
             {
               id: 4,
               title: "Graphics Design And Branding",
-              image: serviceImg6,
+              image: serviceImg4,
               delay: "1.5s",
             },
             {
               id: 5,
               title: "Brand Management",
-              image: serviceImg1,
+              image: serviceImg5,
               delay: "1.75s",
             },
             {
               id: 6,
               title: "Sound Equipment / PA System Hire",
-              image: serviceImg2,
+              image: serviceImg6,
               delay: "2s",
             },
           ].map((service, index) => (

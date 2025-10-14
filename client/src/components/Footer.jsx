@@ -2,6 +2,7 @@ import React from 'react';
 import footerLogo from '../assets/images/ei_1644409695507-removebg-preview.png'; // adjust the path as needed
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
   return (
     <footer className="main-footer">
       <div className="container">
@@ -16,10 +17,10 @@ const Footer = () => {
                     <figure>
                       <img src={footerLogo} alt="Footer Logo" />
                     </figure>
-                    <p>Creative Agency Based on Lorem Ipsum</p>
                     <ul>
                       <li><a href="#">info@epiqonsolutions.com</a></li>
-                      <li><a href="#">(+0) 123 456 789</a></li>
+                      <li><a href="0780181834">0780181834/070277014
+                      </a></li>
                     </ul>
                   </div>
                   {/* Footer About End */}
@@ -46,6 +47,8 @@ const Footer = () => {
                       <li><a href="#">facebook</a></li>
                       <li><a href="#">twitter</a></li>
                       <li><a href="#">linkedin</a></li>
+                      <li><a href="#">X</a></li>
+                      <li><a href=""></a>youtube</li>
                     </ul>
                   </div>
                 </div>
@@ -54,11 +57,12 @@ const Footer = () => {
                   <div className="footer-links">
                     <h2>services</h2>
                     <ul>
-                      <li><a href="#">web development</a></li>
+                      <li><a href="#">photography and videography</a></li>
                       <li><a href="#">digital marketing</a></li>
-                      <li><a href="#">game development</a></li>
-                      <li><a href="#">mobile app development</a></li>
-                      <li><a href="#">networking services</a></li>
+                      <li><a href="#">website development</a></li>
+                      <li><a href="#">graphics design and branding</a></li>
+                      <li><a href="#">brand management</a></li>
+                      <li><a href="#">sound equipment/PA system hire</a></li>
                     </ul>
                   </div>
                 </div>
@@ -69,14 +73,12 @@ const Footer = () => {
               <div className="row align-items-center">
                 <div className="col-lg-6">
                   <div className="footer-copyright-text">
-                    <p>Copyright © 2024 weebix. All rights reserved.</p>
+                    <p>Copyright © {currentYear} Epiqon Solutions. All rights reserved.</p>
                   </div>
                 </div>
                 <div className="col-lg-6">
                   <div className="footer-policy-links">
                     <ul>
-                      <li><a href="#">privacy policy</a></li>
-                      <li><a href="#">terms of service</a></li>
                       <li className="highlighted"><a href="#top">go to top</a></li>
                     </ul>
                   </div>

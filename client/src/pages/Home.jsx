@@ -6,6 +6,7 @@ import AboutHero from "../components/HeroAbout";
 import OurServices from "../components/HeroServices";
 import ChooseUs from "../components/ChooseUs";
 import CoreValues from "../components/CoreValues";
+import MissionVision from "../components/MissionVision";
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
       <OurServices />
       <ChooseUs />
       <CoreValues />
+      <MissionVision />
       <Footer />
     </>
   );
