@@ -70,12 +70,10 @@ const ServiceDetail = () => {
                     {service.details}
                   </p>
                   <p className="wow fadeInUp" data-wow-delay="0.5s">
-                    You can customize this paragraph or pull additional data
-                    here.
+                    {service.description}
                   </p>
                   <p className="wow fadeInUp" data-wow-delay="0.75s">
-                    Feel free to enhance this section with FAQs, testimonials,
-                    or video embeds.
+               
                   </p>
                 </div>
               </div>
@@ -87,34 +85,28 @@ const ServiceDetail = () => {
                   className="services-list-box wow fadeInUp"
                   data-wow-delay="0.5s"
                 >
-                  <div className="icon-box">
-                    <img
-                      src="/images/icon-service-list.svg"
-                      alt="Service Icon"
-                    />
-                  </div>
-                  <h3>{service.title.toLowerCase()}</h3>
+                  <h3>Quick Links</h3>
                   <ul>
                     <li>
-                      <a href="#">WordPress Support & Maintenance</a>
+                      <a href="#">Digital Marketing</a>
                     </li>
                     <li>
-                      <a href="#">1,000+ Completed Projects</a>
+                      <a href="#">Photography & Videography</a>
                     </li>
                     <li>
-                      <a href="#">Content Migration</a>
+                      <a href="#">Website Development</a>
                     </li>
                     <li>
-                      <a href="#">Plugin Installation and Customization</a>
+                      <a href="#">Graphics Design And Branding</a>
                     </li>
                     <li>
-                      <a href="#">Fast Load Time</a>
+                      <a href="#">Brand Management</a>
                     </li>
                     <li>
-                      <a href="#">Easy Back-End Admin Panel</a>
+                      <a href="#">Sound Equipment / PA System Hire</a>
                     </li>
                   </ul>
-                  <a href="/contact" className="btn-default">
+                  <a href="/contact-us" className="btn-default">
                     contact now
                   </a>
                 </div>

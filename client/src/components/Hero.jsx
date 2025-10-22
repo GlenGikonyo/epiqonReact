@@ -31,7 +31,7 @@ const Hero = () => {
               {/* Hero Footer Start */}
               <div className="hero-footer">
                 <a
-                  href="#"
+                  href="/contact-us"
                   className="btn-default wow fadeInUp"
                   data-wow-delay="0.75s"
                 >
