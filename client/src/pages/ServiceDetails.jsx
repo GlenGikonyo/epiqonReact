@@ -41,12 +41,12 @@ const ServiceDetail = () => {
               <div className="page-header-box">
                 <h1 className="text-anime-style-3">{service.title}</h1>
                 <nav className="wow fadeInUp" data-wow-delay="0.25s">
-                <ol className="breadcrumb">
-                  <li className="breadcrumb-item">
-                    <Link to="/">home</Link>
-                  </li>
-                </ol>
-              </nav>
+                  <ol className="breadcrumb">
+                    <li className="breadcrumb-item">
+                      <Link to="/">home</Link>
+                    </li>
+                  </ol>
+                </nav>
               </div>
             </div>
           </div>
@@ -72,9 +72,6 @@ const ServiceDetail = () => {
                   <p className="wow fadeInUp" data-wow-delay="0.5s">
                     {service.description}
                   </p>
-                  <p className="wow fadeInUp" data-wow-delay="0.75s">
-               
-                  </p>
                 </div>
               </div>
             </div>
@@ -87,28 +84,17 @@ const ServiceDetail = () => {
                 >
                   <h3>Quick Links</h3>
                   <ul>
-                    <li>
-                      <a href="#">Digital Marketing</a>
-                    </li>
-                    <li>
-                      <a href="#">Photography & Videography</a>
-                    </li>
-                    <li>
-                      <a href="#">Website Development</a>
-                    </li>
-                    <li>
-                      <a href="#">Graphics Design And Branding</a>
-                    </li>
-                    <li>
-                      <a href="#">Brand Management</a>
-                    </li>
-                    <li>
-                      <a href="#">Sound Equipment / PA System Hire</a>
-                    </li>
+                    {services.map((service) => (
+                      <li key={service.id}>
+                        <Link to={`/services/${service.id}`}>
+                          {service.title}
+                        </Link>
+                      </li>
+                    ))}
                   </ul>
-                  <a href="/contact-us" className="btn-default">
+                  <Link to="/contact-us" className="btn-default">
                     contact now
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

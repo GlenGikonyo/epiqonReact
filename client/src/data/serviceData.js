@@ -1,9 +1,9 @@
 import digitalMarketingImage from "../assets/images/service-digital-marketing.jpg";
-// import photographyVideographyImage from "../assets/images/service-photography-videography.jpg";
-// import websiteDevelopmentImage from "../assets/images/service-website-development.jpg";
-// import graphicsDesignImage from "../assets/images/service-graphics-design.jpg";
-// import brandManagementImage from "../assets/images/service-brand-management.jpg";
-// import soundEquipmentImage from "../assets/images/service-sound-equipment.jpg";
+import photographyVideographyImage from "../assets/images/service-photography-videography.jpg";
+import websiteDevelopmentImage from "../assets/images/service-website-development.jpg";
+import graphicsDesignImage from "../assets/images/service-graphics-design.jpg";
+import brandManagementImage from "../assets/images/service-brand-management.jpg";
+import soundEquipmentImage from "../assets/images/service-sound-equipment.jpg";
 
 const servicesData = [
   {
@@ -20,7 +20,7 @@ const servicesData = [
     description: "Capture stunning visuals that tell your brand or event’s unique story.",
     details:
       "We offer comprehensive photography and videography services for Corporate & Social Event Coverage, Weddings, Birthdays & Private Functions, Product & Brand Photography, as well as Livestreaming & Hybrid Event Solutions. Our team ensures every moment is captured beautifully and professionally.",
-    image: "/assets/images/service-photography-videography.jpg",
+    image: photographyVideographyImage,
   },  
   {
     id: 3,
@@ -28,7 +28,7 @@ const servicesData = [
     description: "Create powerful and intuitive websites for your brand.",
     details:
       "We build Custom Websites & E-commerce Stores, SEO-Optimized Landing Pages, Portfolio & Business Sites, and integrate essential tools like CRM, Payment Gateways, and Chatbots to enhance your digital presence.",
-    image: "/assets/images/service-website-development.jpg",
+    image: websiteDevelopmentImage,
   },
   {
     id: 4,
@@ -36,7 +36,7 @@ const servicesData = [
     description: "Design stunning visuals that captivate your audience.",
     details:
       "Our graphics design and branding services cover Logos, Flyers, Posters, and Brochures, as well as Digital & Print Media Branding and Corporate Identity Packages that bring your brand to life.",
-    image: "/assets/images/service-graphics-design.jpg",
+    image: graphicsDesignImage,
   },
   {
     id: 5,
@@ -44,7 +44,7 @@ const servicesData = [
     description: "Build and maintain a strong, positive brand reputation.",
     details:
       "We provide Brand Management services including Strategy & Positioning, Public Relations Support, and Reputation Management to help your brand stay consistent and trustworthy across all channels.",
-    image: "/assets/images/service-brand-management.jpg",
+    image: brandManagementImage,
   },
   {
     id: 6,
@@ -52,7 +52,7 @@ const servicesData = [
     description: "Deliver high-quality sound and event experiences.",
     details:
       "We offer Professional Audio Systems for Corporate & Social Events, DJ & MC Support, and Stage & Lighting Integration to ensure your event sounds and feels exceptional.",
-    image: "/assets/images/service-sound-equipment.jpg",
+    image: soundEquipmentImage,
   },
 ];
 
