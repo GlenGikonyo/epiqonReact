@@ -3,18 +3,18 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import PageHeader from "../components/PageHeader";
 // import Projects from "../components/Projects";
-// import OurServices from "../components/HeroServices";
+import TrainingPackages from "../components/TrainingPackages";
 
-const Portfolio = () => {
+const TrainingsPackages = () => {
   return (
     <>
       <Navbar />
-      <PageHeader title={"Training Packages"} />
+      <PageHeader title={"Training Packages & Pricing"} />
       {/* <Projects /> */}
-      {/* <OurServices /> */}
+      <TrainingPackages />
       <Footer />
     </>
   );
 };
 
-export default Portfolio;
+export default TrainingsPackages;

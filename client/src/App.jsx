@@ -4,7 +4,7 @@ import About from "./pages/About";
 import Services from "./pages/Services";
 import ServiceDetail from "./pages/ServiceDetails";
 import Contact from "./pages/ContactUs";
-import Portfolio from "./pages/Portfolio";
+import Portfolio from "./pages/Training";
 import PreloaderAndCursor from "./components/PreLoaderAndCursor";
 import Admin from "./pages/Admin";
 import Login from "./components/Login";
@@ -28,7 +28,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
           <Route path="/services/:id" element={<ServiceDetail />} />
-          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/training" element={<Portfolio />} />
           <Route path="/contact-us" element={<Contact />} />
           <Route path="/login" element={<Login onLogin={handleLogin} />} />
           <Route
