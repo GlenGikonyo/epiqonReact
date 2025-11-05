@@ -18,7 +18,7 @@ const Footer = () => {
                       <img src={footerLogo} alt="Footer Logo" />
                     </figure>
                     <ul>
-                      <li><a href="#">info@epiqonsolutions.com</a></li>
+                      <li><a href="#">info@epiqonsolutions.co ke</a></li>
                       <li><a href="0780181834">0780181834/070277014
                       </a></li>
                     </ul>
@@ -43,12 +43,11 @@ const Footer = () => {
                   <div className="footer-links">
                     <h2>Socials</h2>
                     <ul>
-                      <li><a href="#">instagram</a></li>
-                      <li><a href="#">facebook</a></li>
-                      <li><a href="#">twitter</a></li>
-                      <li><a href="#">linkedin</a></li>
-                      <li><a href="#">X</a></li>
-                      <li><a href=""></a>youtube</li>
+                      <li><a href="https://www.instagram.com/epiqonsolutions">instagram</a></li>
+                      <li><a href="https://www.facebook.com/EpiqonSolutions">facebook</a></li>
+                      <li><a href="https://www.linkedin.com/in/epiqon-solution-588aa8227">linkedin</a></li>
+                      <li><a href="https://x.com/EpiqonS">X</a></li>
+                      <li><a href="https://www.youtube.com/@epiqonsolutionsltd"></a>youtube</li>
                     </ul>
                   </div>
                 </div>

@@ -113,23 +113,28 @@ const ContactUs = () => {
                   </h3>
                   <ul className="wow fadeInUp" data-wow-delay="0.75s">
                     <li>
-                      <a href="#">
+                      <a href="https://www.facebook.com/EpiqonSolutions">
                         <i className="fa-brands fa-facebook-f"></i>
                       </a>
                     </li>
                     <li>
-                      <a href="#">
+                      <a href="https://www.instagram.com/epiqonsolutions">
                         <i className="fa-brands fa-instagram"></i>
                       </a>
                     </li>
                     <li>
-                      <a href="#">
+                      <a href="https://www.linkedin.com/in/epiqon-solution-588aa8227">
                         <i className="fa-brands fa-linkedin-in"></i>
                       </a>
                     </li>
                     <li>
-                      <a href="#">
-                        <i className="fa-brands fa-twitter"></i>
+                      <a href="https://x.com/EpiqonS">
+                      <i class="fa-brands fa-x-twitter"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.youtube.com/@epiqonsolutionsltd">
+                      <i class="fa-brands fa-youtube"></i>
                       </a>
                     </li>
                   </ul>
