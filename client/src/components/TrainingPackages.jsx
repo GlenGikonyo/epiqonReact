@@ -219,6 +219,20 @@ const TrainingPackages = () => {
           padding: 60px 0;
         }
         
+        .training-intro {
+          text-align: center;
+          max-width: 800px;
+          margin: 0 auto 40px;
+          padding: 0 15px;
+        }
+        
+        .training-intro p {
+          font-size: 18px;
+          line-height: 1.6;
+          color: #4b5563;
+          margin: 0;
+        }
+        
         .training-card {
           background: #fff;
           border-radius: 12px;
@@ -362,13 +376,19 @@ const TrainingPackages = () => {
           font-size: 15px;
           cursor: pointer;
           transition: all 0.3s ease;
+          text-decoration: none;
+          display: block;
+          text-align: center;
         }
         
         .enroll-btn:hover {
           background: #1d4ed8;
           transform: translateY(-2px);
           box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+          color: #fff;
         }
+        
+
         
         @media (max-width: 768px) {
           .training-packages-container {
@@ -391,23 +411,19 @@ const TrainingPackages = () => {
       `}</style>
       
       <div className="container training-packages-container">
-        <div className="row section-row align-items-center">
-          <div className="col-lg-7 col-md-7">
-            <div className="section-title">
+        <div className="row section-row">
+          <div className="col-12">
+            <div className="section-title text-center">
               <h3 className="wow fadeInUp">Training Packages & Pricing</h3>
-              <h2 className="text-anime-style-3">What we can offer today</h2>
+              <h2 className="text-anime-style-3">What We Offer</h2>
             </div>
           </div>
+        </div>
 
-          <div className="col-lg-5 col-md-5">
-            <div className="section-btn">
-              <a
-                href="/services"
-                className="btn-default wow fadeInUp"
-                data-wow-delay="0.25s"
-              >
-                view all training packages
-              </a>
+        <div className="row">
+          <div className="col-12">
+            <div className="training-intro wow fadeInUp" data-wow-delay="0.1s">
+              <p>At Epiqon Solutions, we've designed flexible training packages to suit different learning needs — whether you're an individual looking to sharpen your skills or an organization seeking to empower your team.</p>
             </div>
           </div>
         </div>
@@ -416,14 +432,10 @@ const TrainingPackages = () => {
           {trainingData.map((service) => (
             <div className="col-lg-4 col-md-6" key={service.id}>
               <div className="training-card wow fadeInUp" data-wow-delay={service.delay}>
-                <div className="training-image-wrapper">
-                  <img src={service.image} alt={service.title} />
+                <div className="training-content">
                   <div className="training-icon-badge">
                     {service.icon}
                   </div>
-                </div>
-
-                <div className="training-content">
                   <h3 className="training-title">{service.title}</h3>
                   
                   <button
@@ -459,6 +471,13 @@ const TrainingPackages = () => {
                             </li>
                           ))}
                         </ul>
+
+                        <a 
+                          href={`mailto:info@epiqonsolutionsltd.co.ke?subject=Enrollment Inquiry - ${service.title} (${pkg.name})&body=Hello, I would like to enroll in the ${pkg.name} for ${service.title}.%0D%0A%0D%0APlease provide me with more information about the enrollment process.%0D%0A%0D%0AThank you.`}
+                          className="enroll-btn"
+                        >
+                          Enroll Now
+                        </a>
                       </div>
                     ))}
                   </div>
