@@ -18,7 +18,7 @@ const OurServices = () => {
             {/* Section Title Start */}
             <div className="section-title">
               <h3 className="wow fadeInUp">our services</h3>
-              <h2 className="text-anime-style-3">What we can offer today</h2>
+              <h2 className="text-anime-style-3">What we offer</h2>
             </div>
             {/* Section Title End */}
           </div>
@@ -92,10 +92,7 @@ const OurServices = () => {
                       <img src={arrowIcon} alt="arrow" />
                     </Link>
                   </div>
-                  <p>
-                    totam rem aperiam, eaque ipsa quae ab illo inventore et
-                    quasi architecto beatae.
-                  </p>
+                  <p>Exceptional {service.title.toLowerCase()} solutions to elevate your brand.</p>
                 </div>
                 <div className="service-image">
                   <figure className="image-anime">

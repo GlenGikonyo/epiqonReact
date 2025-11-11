@@ -5,6 +5,7 @@ import PageHeader from "../components/PageHeader";
 import AboutHero from "../components/HeroAbout";
 import OurServices from "../components/HeroServices";
 import WhyChooseUs from "../components/ChooseUs";
+import MissionVision from "../components/MissionVision";
 
 const About = () => {
   return (
@@ -14,6 +15,7 @@ const About = () => {
       <AboutHero />
       <OurServices />
       <WhyChooseUs />
+      <MissionVision />
       <Footer />
     </>
   );

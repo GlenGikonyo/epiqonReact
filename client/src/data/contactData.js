@@ -9,7 +9,7 @@ const contactData = [
     {
       title: "call now",
       icon: "/src/assets/images/icon-phone.svg",
-      content: ["0780181834", "070277014"],
+      content: ["0780181834", "0702770914"],
       image: "/src/assets/images/contact-info-2.jpg",
       delay: "0.5s",
     },

@@ -5,31 +5,38 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 import starIcon from "../assets/images/icon-star.svg";
-import author1 from "../assets/images/author-1.jpg";
-import author2 from "../assets/images/author-2.jpg";
-import author3 from "../assets/images/author-3.jpg";
 
 const Testimonials = () => {
   const testimonials = [
     {
-      author: "John Doe",
-      company: "Acme Solutions",
-      image: author1,
+      author: "Wanjiku Mwangi",
+      company: "SafariTech Solutions",
+      testimonial:
+        "Epiqon Solutions helped us transform our digital presence. Their professionalism and creativity are unmatched!",
     },
     {
-      author: "Arita Banson",
-      company: "Delta Innovation",
-      image: author2,
+      author: "Otieno Ochieng",
+      company: "Lake Victoria Enterprises",
+      testimonial:
+        "The team at Epiqon Solutions delivered beyond our expectations. Their branding services are top-notch!",
     },
     {
-      author: "Banson Doe",
-      company: "Horizon Ventures",
-      image: author3,
+      author: "Amina Hassan",
+      company: "Nairobi Innovations Ltd",
+      testimonial:
+        "We were impressed by their attention to detail and ability to capture our vision perfectly. Highly recommended!",
     },
     {
-      author: "John Doe",
-      company: "Omega Solutions",
-      image: author2,
+      author: "Kamau Njuguna",
+      company: "Mount Kenya Ventures",
+      testimonial:
+        "Their photography and videography services brought our events to life. We couldn’t be happier with the results!",
+    },
+    {
+      author: "Chebet Kiprono",
+      company: "Rift Valley Creations",
+      testimonial:
+        "Epiqon Solutions provided excellent digital marketing strategies that boosted our brand visibility significantly.",
     },
   ];
 
@@ -61,16 +68,9 @@ const Testimonials = () => {
                         <img src={starIcon} alt="Rating stars" />
                       </div>
                       <div className="testimonial-content">
-                        <p>
-                          Lorem Ipsum is simply dummy text of the printing and
-                          typesetting industry. Lorem Ipsum has been the industry's
-                          standard dummy text ever since.
-                        </p>
+                        <p>{testimonial.testimonial}</p>
                       </div>
                       <div className="testimonial-body">
-                        <figure className="image-anime">
-                          <img src={testimonial.image} alt={testimonial.author} />
-                        </figure>
                         <div className="testimonial-author-title">
                           <h2>{testimonial.author}</h2>
                           <p>{testimonial.company}</p>

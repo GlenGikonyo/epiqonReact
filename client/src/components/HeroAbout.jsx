@@ -45,13 +45,6 @@ const AboutUs = () => {
               to deliver impactful results that elevate brands, capture
               audiences, and deliver measurable success.
               </p>
-              <a
-                href="#"
-                className="btn-default wow fadeInUp"
-                data-wow-delay="1.25s"
-              >
-                More About Us
-              </a>
             </div>
             {/* About Us Content End */}
           </div>
