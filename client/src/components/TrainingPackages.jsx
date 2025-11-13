@@ -227,10 +227,11 @@ const TrainingPackages = () => {
         }
         
         .training-intro p {
-          font-size: 18px;
+          font-size: 20px;
           line-height: 1.6;
           color: #4b5563;
           margin: 0;
+          font-weight: 700;
         }
         
         .training-card {
@@ -263,7 +264,7 @@ const TrainingPackages = () => {
           font-size: 22px;
           font-weight: 700;
           margin-bottom: 20px;
-          color: #1a1a1a;
+          color: #64ac6b;
         }
         
         .toggle-packages-btn {

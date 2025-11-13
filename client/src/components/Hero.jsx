@@ -22,7 +22,7 @@ const Hero = () => {
               <div className="hero-body">
                 <p className="wow fadeInUp" data-wow-delay="0.5s">
                   Epiqon Solutions Ltd is a creative and technology-driven
-                  company dedicated to helping brands, businesses, and
+                  company dedicated to helping brands, businesses and
                   organizations stand out in the digital age.
                 </p>
               </div>

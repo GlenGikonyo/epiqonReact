@@ -7,7 +7,7 @@ const MissionVision = () => {
     {
       icon: missionIcon,
       title: "Mission",
-      text: "To empower businesses and individuals with innovative media, marketing, and IT solutions that drive visibility, growth, and long-term success.",
+      text: "To empower businesses and individuals with innovative media, marketing and IT solutions that drive visibility, growth and long-term success.",
     },
     {
       icon: visionIcon,
@@ -77,7 +77,7 @@ const MissionVision = () => {
                   <p
                     style={{
                       margin: 0,
-                      fontSize: "16px",
+                      fontSize: "20px",
                       lineHeight: "1.6",
                       color: "#555",
                     }}

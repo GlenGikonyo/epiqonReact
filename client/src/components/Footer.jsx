@@ -30,11 +30,12 @@ const Footer = () => {
                   <div className="footer-links">
                     <h2>pages</h2>
                     <ul>
-                      <li><a href="#">Home</a></li>
-                      <li><a href="#">About Us</a></li>
-                      <li><a href="#">Services</a></li>
-                      <li><a href="#">Blog</a></li>
-                      <li><a href="#">Contact Us</a></li>
+                      <li><a href="/">Home</a></li>
+                      <li><a href="/about">About Us</a></li>
+                      <li><a href="/services">Services</a></li>
+                      <li><a href="/training">Training Packages</a></li>
+                      <li><a href="/contact-us">Contact Us</a></li>
+                      <li><a href="#">Portfolio</a></li>
                     </ul>
                   </div>
                 </div>

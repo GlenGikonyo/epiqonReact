@@ -46,6 +46,7 @@
 	--default-font		: "Manrope", sans-serif;
 }
 
+
 /************************************/
 /*** 	   02. General css		  ***/
 /************************************/
@@ -62,6 +63,7 @@ body{
 p{
 	line-height: 1.6em;
 	margin-bottom: 1.5em;
+    font-size: 20px;
 }
 
 h1,
@@ -72,7 +74,7 @@ h5,
 h6{
 	margin :0;
 	font-weight: 700;
-	color: var(--primary-color);
+	color: #64ac6b;
 	line-height: 1.1em;
 }
 
@@ -329,7 +331,7 @@ body{
 }
 
 .section-title h3{
-	font-size: 20px;
+	font-size: 40px;
 	font-weight: 700;
 	text-transform: capitalize;
 	color: var(--accent-color);
@@ -342,6 +344,7 @@ body{
 	letter-spacing: -0.05em;
 	font-weight: 700;
 	margin-bottom: 0;
+    font-weight: bolder;
 }
 
 .section-title h1 span,
@@ -397,7 +400,7 @@ header.main-header .header-sticky.active{
 }
 
 .navbar-brand img{
-    width: 140px; /* Adjust the width to reduce the size */
+    width: 200px; /* Adjust the width to reduce the size */
     height: auto; /* Let the height adjust automatically to maintain aspect ratio */
 }
 
@@ -417,12 +420,13 @@ header.main-header .header-sticky.active{
 }
 
 .main-menu ul li a{
-	font-size: 16px;
-	font-weight: 700;
+	font-size: 18px;
+	font-weight: 900;
 	padding: 15px 10px !important;
 	color: var(--primary-color);
 	text-transform: capitalize;
 	transition: all 0.3s ease-in-out;
+    
 }
 
 .main-menu ul li.submenu > a:after{
@@ -828,6 +832,7 @@ header.main-header .header-sticky.active{
 
 .service-content p{
 	margin: 0;
+    font-size: 20px;
 }
 
 .service-image{
@@ -3541,3 +3546,4 @@ table tr:hover {
   margin-top: 10px;
   font-size: 14px;
 }
+

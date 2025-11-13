@@ -37,9 +37,9 @@ const Navbar = () => {
                       training packages
                     </Link>
                   </li>
-                  <li className="nav-item highlighted-menu">
-                    <Link className="nav-link" to="/contact-us">
-                      Contact Us
+                  <li className="nav-item">
+                    <Link className="nav-link" to="/portfolio">
+                      portfolio
                     </Link>
                   </li>
                 </ul>
