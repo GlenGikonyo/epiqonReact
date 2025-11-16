@@ -34,7 +34,7 @@ const ContactUs = () => {
 
     try {
       const res = await axios.post(
-        "http://localhost:3000/api/messages",
+        "http://localhost:5000/api/messages",
         messageData
       );
       setSuccessMessage("Message sent successfully!");

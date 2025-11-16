@@ -218,7 +218,7 @@ const portfolioProjects = [
         }
 
         .portfolio-content p {
-          font-size: 14px;
+          font-size: 16px;
           color: #9c9fa6;
           line-height: 1.6;
           margin: 0 0 15px 0;
