@@ -16,7 +16,7 @@ const contactData = [
     {
       title: "email us",
       icon: "src/assets/images/icon-mail.svg",
-      content: ["info@epiqonsolutions.co ke",],
+      content: ["info@epiqon.co ke",],
       image: "/src/assets/images/contact-info-3.jpg",
       delay: "0.75s",
     },

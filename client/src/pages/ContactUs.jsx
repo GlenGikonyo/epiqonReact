@@ -104,9 +104,8 @@ const ContactUs = () => {
 
                 <div className="contact-detail-body">
                   <p className="wow fadeInUp" data-wow-delay="0.25s">
-                    Sed ut perspiciatis unde omnis iste natus error sit
-                    voluptatem accusantium, totam rem aperiam, eaque ipsa quae
-                    ab illo inventore et.
+                  Ready to elevate your digital presence? Get in touch with our team at Epiqon 
+                  Solutions. We're here to discuss your project and deliver exceptional results.
                   </p>
                   <h3 className="wow fadeInUp" data-wow-delay="0.5s">
                     follow us:

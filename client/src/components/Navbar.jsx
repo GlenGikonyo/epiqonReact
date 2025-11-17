@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/images/ei_1644409695507-removebg-preview.png";
 
 const Navbar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   return (
     <header className="main-header">
       <div className="header-sticky">
@@ -13,8 +19,9 @@ const Navbar = () => {
               <img src={logo} alt="Logo" />
             </Link>
             {/* Logo End */}
+
             {/* Main Menu Start */}
-            <div className="collapse navbar-collapse main-menu">
+            <div className={`collapse navbar-collapse main-menu ${menuOpen ? "show" : ""}`}>
               <div className="nav-menu-wrapper">
                 <ul className="navbar-nav mr-auto" id="menu">
                   <li>
@@ -55,10 +62,15 @@ const Navbar = () => {
             </div>
             {/* Main Menu End */}
 
-            <div className="navbar-toggle"></div>
+            {/* Hamburger Menu */}
+            <div className="navbar-toggle" onClick={toggleMenu}>
+              <span className="slicknav_icon-bar"></span>
+              <span className="slicknav_icon-bar"></span>
+              <span className="slicknav_icon-bar"></span>
+            </div>
           </div>
         </nav>
-        <div className="responsive-menu"></div>
+        <div className={`responsive-menu ${menuOpen ? "open" : ""}`}></div>
       </div>
     </header>
   );

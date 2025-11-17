@@ -1,6 +1,6 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper/modules";
+import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 
@@ -30,7 +30,7 @@ const Testimonials = () => {
       author: "Kamau Njuguna",
       company: "Mount Kenya Ventures",
       testimonial:
-        "Their photography and videography services brought our events to life. We couldn’t be happier with the results!",
+        "Their photography and videography services brought our events to life. We couldn't be happier with the results!",
     },
     {
       author: "Chebet Kiprono",
@@ -56,9 +56,18 @@ const Testimonials = () => {
           <div className="col-md-12">
             <div className="testimonial-slider">
               <Swiper
+                modules={[Pagination, Autoplay]}
+                pagination={{
+                  clickable: true,
+                  dynamicBullets: true,
+                }}
+                autoplay={{
+                  delay: 5000,
+                  disableOnInteraction: false,
+                }}
                 loop={true}
-                pagination={{ clickable: true }}
-                modules={[Pagination]}
+                spaceBetween={30}
+                slidesPerView={1}
                 className="mySwiper"
               >
                 {testimonials.map((testimonial, index) => (

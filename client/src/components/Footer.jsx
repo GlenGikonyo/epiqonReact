@@ -18,7 +18,7 @@ const Footer = () => {
                       <img src={footerLogo} alt="Footer Logo" />
                     </figure>
                     <ul>
-                      <li><a href="#">info@epiqonsolutions.co ke</a></li>
+                      <li><a href="#">info@epiqon.co ke</a></li>
                       <li><a href="0780181834">0780181834/070277014
                       </a></li>
                     </ul>
@@ -35,7 +35,7 @@ const Footer = () => {
                       <li><a href="/services">Services</a></li>
                       <li><a href="/training">Training Packages</a></li>
                       <li><a href="/contact-us">Contact Us</a></li>
-                      <li><a href="#">Portfolio</a></li>
+                      <li><a href="/portfolio">Portfolio</a></li>
                     </ul>
                   </div>
                 </div>
@@ -44,11 +44,11 @@ const Footer = () => {
                   <div className="footer-links">
                     <h2>Socials</h2>
                     <ul>
-                      <li><a href="https://www.instagram.com/epiqonsolutions">instagram</a></li>
-                      <li><a href="https://www.facebook.com/EpiqonSolutions">facebook</a></li>
-                      <li><a href="https://www.linkedin.com/in/epiqon-solution-588aa8227">linkedin</a></li>
-                      <li><a href="https://x.com/EpiqonS">X</a></li>
-                      <li><a href="https://www.youtube.com/@epiqonsolutionsltd"></a>youtube</li>
+                      <li><a href="https://www.instagram.com/epiqonsolutions" target='blank'>instagram</a></li>
+                      <li><a href="https://www.facebook.com/EpiqonSolutions" target='blank'>facebook</a></li>
+                      <li><a href="https://www.linkedin.com/in/epiqon-solution-588aa8227" target='blank'>linkedin</a></li>
+                      <li><a href="https://x.com/EpiqonS" target='blank'>X</a></li>
+                      <li><a href="https://www.youtube.com/@epiqonsolutionsltd" target='blank'>youtube</a></li>
                     </ul>
                   </div>
                 </div>
@@ -57,12 +57,12 @@ const Footer = () => {
                   <div className="footer-links">
                     <h2>services</h2>
                     <ul>
-                      <li><a href="#">photography and videography</a></li>
-                      <li><a href="#">digital marketing</a></li>
-                      <li><a href="#">website development</a></li>
-                      <li><a href="#">graphics design and branding</a></li>
-                      <li><a href="#">brand management</a></li>
-                      <li><a href="#">sound equipment/PA system hire</a></li>
+                      <li><a href="/services/2">photography and videography</a></li>
+                      <li><a href="/services/1">digital marketing</a></li>
+                      <li><a href="/services/3">website development</a></li>
+                      <li><a href="/services/4">graphics design and branding</a></li>
+                      <li><a href="/services/5">brand management</a></li>
+                      <li><a href="/services/6">sound equipment/PA system hire</a></li>
                     </ul>
                   </div>
                 </div>
