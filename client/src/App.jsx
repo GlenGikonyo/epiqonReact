@@ -9,6 +9,7 @@ import Portfolio from "./pages/Portfolio";
 import PreloaderAndCursor from "./components/PreLoaderAndCursor";
 import Admin from "./pages/Admin";
 import Login from "./components/Login";
+import ScrollToTop from "./components/ScrollToTop";
 import { useState, useCallback } from "react";
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
     <>
       <PreloaderAndCursor />
       <Router>
+      <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />

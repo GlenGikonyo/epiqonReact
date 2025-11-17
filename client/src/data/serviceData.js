@@ -5,7 +5,7 @@ import graphicsDesignImage from "../assets/images/service-graphics-design.jpg";
 import brandManagementImage from "../assets/images/service-brand-management.jpg";
 import soundEquipmentImage from "../assets/images/service-sound-equipment.jpg";
 
-const servicesData = [
+const services = [
   {
     id: 1,
     title: "Digital Marketing",
@@ -17,7 +17,7 @@ const servicesData = [
   {
     id: 2,
     title: "Photography & Videography",
-    description: "Capture stunning visuals that tell your brand or event’s unique story.",
+    description: "Capture stunning visuals that tell your brand or event's unique story.",
     details:
       "We offer comprehensive photography and videography services for Corporate & Social Event Coverage, Weddings, Birthdays & Private Functions, Product & Brand Photography, as well as Livestreaming & Hybrid Event Solutions. Our team ensures every moment is captured beautifully and professionally.",
     image: photographyVideographyImage,
@@ -56,4 +56,4 @@ const servicesData = [
   },
 ];
 
-export default servicesData;
+export default services;

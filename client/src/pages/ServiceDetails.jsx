@@ -9,6 +9,9 @@ const ServiceDetail = () => {
   const { id } = useParams();
   const service = services.find((s) => s.id === parseInt(id));
 
+  console.log("Service:", service); 
+  console.log("Image path:", service?.image);
+
   if (!service) {
     return (
       <div>
@@ -60,7 +63,7 @@ const ServiceDetail = () => {
             <div className="col-lg-8">
               <div className="service-single-content">
                 <div className="service-featured-image">
-                  <figure className="image-anime reveal">
+                  <figure className="image-anime">
                     <img src={service.image} alt={service.title} />
                   </figure>
                 </div>

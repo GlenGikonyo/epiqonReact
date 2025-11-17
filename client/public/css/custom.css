@@ -875,7 +875,7 @@ header.main-header .header-sticky.active {
 
 .our-services {
   background-color: var(--secondary-color);
-  padding: 100px 0 70px;
+  padding: 50px 0 70px;
 }
 
 .service-item {
